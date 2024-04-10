@@ -1,0 +1,34 @@
+Report on Performance of Deep Learning Model for Alphabet Soup
+
+Overview of the Analysis:
+The purpose of this analysis is to develop and evaluate a deep learning model for Alphabet Soup, with the goal of accurately predicting whether applicants will be successful in receiving funding based on certain features provided in the dataset.
+
+Results:
+
+Data Preprocessing:
+
+- Target Variable(s):
+  - The target variable for the model is the 'IS_SUCCESSFUL' column from the application dataset.
+
+- Feature Variable(s):
+  - The feature variables for the model comprise all columns except 'IS_SUCCESSFUL' from the application dataset.
+
+- Variables Removed:
+  - The 'EIN' and 'NAME' columns were removed as they were neither targets nor features for the dataset.
+
+Compiling, Training, and Evaluating the Model:
+
+- Model Architecture:
+  - The initial model had 8 neurons in the first hidden layer and 5 neurons in the second hidden layer. These values were chosen as starting points for experimentation.
+ 
+- Model Performance:
+  - The model did not achieve the target performance of 75% accuracy.
+
+- Steps Taken to Improve Performance:
+  - Additional layers were added.
+  - Further columns were removed.
+  - More hidden nodes were introduced.
+  - Different activation functions were applied to each layer.
+
+
+The deep learning model achieved approximately 73% accuracy in predicting the classification problem. However, there is room for improvement. To enhance accuracy, it is recommended to conduct thorough data cleanup initially, ensuring stronger correlation between input and output variables. Additionally, experimenting with different activation functions and model architectures could potentially yield higher accuracy. Iterative testing and refinement should be employed until the desired accuracy target is reached.
